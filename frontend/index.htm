@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Car-wash</title>
+
+            <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+                  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                  crossorigin="anonymous"
+            />
+            <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+            />
+            <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+                  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+            />
+            <link rel="stylesheet" href="./css/style.css" />
+      </head>
+
+      <body id="home" class="bg-dark">
+            <div class="container-fluid g-0">
+                  <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+                        <div class="container-fluid">
+                              <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                                    <img
+                                          src="./assets/logo.png"
+                                          alt=""
+                                          width="50"
+                                          class="img-fluid logo"
+                                    />
+                                    <span class="fs-2 fw-bold">Car-wash</span>
+                              </a>
+                              <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navMenu"
+                                    aria-controls="navMenu"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                              >
+                                    <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navMenu">
+                                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                          <li class="nav-item">
+                                                <a class="nav-link px-4" href="#home">Home </a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-4" href="#intro"
+                                                      >What we do?</a
+                                                >
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-4" href="#services"
+                                                      >Services</a
+                                                >
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-4" href="#team">About Us</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-4" href="#appoint">Book Us</a>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </nav>
+
+                  <div class="position-relative mb-5">
+                        <div
+                              id="hero"
+                              class="carousel carousel-dark carousel-fade slide"
+                              data-bs-ride="carousel"
+                        >
+                              
+                              <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                          <img
+                                                src="./assets/carousel-img-1.jpg"
+                                                class="d-block w-100"
+                                                alt="..."
+                                          />
+                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="6000">
+                                          <img
+                                                src="./assets/carousel-img-2.jpeg"
+                                                class="d-block w-100"
+                                                alt="..."
+                                          />
+                                          
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                          <img
+                                                src="./assets/carousel-img-3.jpg"
+                                                class="d-block w-100"
+                                                alt="..."
+                                          />
+                                          
+                                    </div>
+                              </div>
+                              <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#hero"
+                                    data-bs-slide="prev"
+                              >
+                                    <span
+                                          class="carousel-control-prev-icon"
+                                          aria-hidden="true"
+                                    ></span>
+                                    <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#hero"
+                                    data-bs-slide="next"
+                              >
+                                    <span
+                                          class="carousel-control-next-icon"
+                                          aria-hidden="true"
+                                    ></span>
+                                    <span class="visually-hidden">Next</span>
+                              </button>
+                        </div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                  </div>
+            </div>
+
+            <div id="intro" class="container-xl pb-5">
+                  <h4 class="text-white display-3 text-center p-3 pb-5">
+                        Your car is our top priority
+                  </h4>
+                  <p class="text-justify text-last-center text-white-50 pb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+                        praesentium distinctio quos fugit corrupti nam, incidunt odio consequuntur
+                        maxime eius dicta aspernatur accusamus ex, omnis autem! Exercitationem
+                        perferendis provident placeat id commodi voluptate explicabo inventore
+                        aperiam odio veritatis repudiandae molestiae nemo harum autem a labore, ab
+                        ipsa. Totam inventore consequuntur voluptates deleniti quidem ut sunt quam
+                        suscipit. Reiciendis magni quo sint perferendis doloribus hic, saepe nisi
+                        deleniti, vero atque adipisci nesciunt quidem, error totam at distinctio qui
+                        quisquam. Enim, rem laboriosam dolorem suscipit eius qui sint accusamus
+                        maiores iusto repellendus sunt quos, non pariatur veniam inventore quod?
+                        Possimus, facere omnis?
+                  </p>
+                  <div class="quilities mb-5">
+                        <div class="row g-0">
+                              <div
+                                    class="col-12 col-lg-6 d-flex align-items-center justify-content-center flex-column flex-sm-row gap-3 p-3"
+                              >
+                                    <img
+                                          src="assets/handshake.png"
+                                          alt=""
+                                          class="img-fluid intro-icon"
+                                    />
+                                    <div>
+                                          <h4 class="h3 text-left text-white">We Listen</h4>
+                                          <p class="text-white-50">
+                                                We listen to our customers carefully and try our
+                                                utmost to make sure you walk or rather- drive out
+                                                satisfied and make your way to us again.
+                                          </p>
+                                          <p class="text-white-50">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptate harum vitae tempore voluptas
+                                                quaerat, debitis ea quisquam nam quos, natus magnam
+                                                cupiditate porro quibusdam ex ipsa ratione. Eos,
+                                                odit ratione.
+                                          </p>
+                                    </div>
+                              </div>
+                              <div
+                                    class="col-12 col-lg-6 d-flex align-items-center justify-content-center flex-column flex-sm-row gap-3 p-3"
+                              >
+                                    <img
+                                          src="assets/sparkle.png"
+                                          alt=""
+                                          class="img-fluid intro-icon"
+                                    />
+                                    <div>
+                                          <h4 class="h3 text-left text-white">
+                                                We like to see sparkles
+                                          </h4>
+                                          <p class="text-white-50">
+                                                It remains our first and foremost attempt to focus
+                                                on bringing up the beauty or your ride. We like to
+                                                shine them like no others, leaving no tiny corner
+                                                stained.
+                                          </p>
+                                          <p class="text-white-50">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit. Veniam placeat qui eos aperiam error, itaque
+                                                accusamus cum nisi. Laborum iste laudantium non
+                                                aliquam amet eaque quos adipisci ea dolorem
+                                                asperiores. Ea enim asperiores at perspiciatis
+                                                similique sequi!
+                                          </p>
+                                    </div>
+                              </div>
+                              <div
+                                    class="col-12 col-lg-6 d-flex align-items-center justify-content-center flex-column flex-sm-row gap-3 p-3"
+                              >
+                                    <img
+                                          src="assets/attendant-list.png"
+                                          alt=""
+                                          class="img-fluid intro-icon"
+                                    />
+                                    <div>
+                                          <h4 class="h3 text-left text-white">
+                                                One car at a time!
+                                          </h4>
+                                          <p class="text-white-50">
+                                                We pay our 100% attention just to your ride.
+                                                Dedicating a slot to single ride at a time allows us
+                                                to attend to it throughly without any hastle. Our
+                                                full attention makes it easier to spot corners
+                                                unreachable by machines.
+                                          </p>
+                                          <p class="text-white-50">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Porro sed dolore nam totam ut quam quos autem
+                                                hic voluptatem enim nemo, cupiditate sint, sunt
+                                                optio distinctio dolor mollitia veritatis? Eum,
+                                                obcaecati porro. Quam, nam.
+                                          </p>
+                                    </div>
+                              </div>
+                              <div
+                                    class="col-12 col-lg-6 d-flex align-items-center justify-content-center flex-column flex-sm-row gap-3 p-3"
+                              >
+                                    <img
+                                          src="assets/stopwatch.png"
+                                          alt=""
+                                          class="img-fluid intro-icon"
+                                    />
+                                    <div>
+                                          <h4 class="h3 text-left text-white">
+                                                Always on our feet
+                                          </h4>
+                                          <p class="text-white-50">
+                                                We're always on our feet, working smartly, without
+                                                rushing through any of your rides. We get the job
+                                                done swiftly but not hastily. All we need are 35
+                                                minutes of your precious time to spark the glow to
+                                                your car.
+                                          </p>
+                                          <p class="text-white-50">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Porro sed dolore nam totam ut quam quos autem
+                                                hic voluptatem enim nemo, cupiditate sint, sunt
+                                                optio distinctio dolor mollitia veritatis? Eum,
+                                                obcaecati porro. Quam, nam.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div id="services" class="container-xl">
+                  <div class="row g-0 text-center">
+                        <div class="col-12 display-3 text-white p-3 pb-5">Our Services</div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center px-4 pb-4">
+                              <div class="service-icons mx-auto p-5 rounded-circle">
+                                    <img
+                                          src="assets/interior.png"
+                                          alt="interior"
+                                          class="img-fluid"
+                                    />
+                              </div>
+                              <h5 class="p-3 h3 text-white">Interior Service</h5>
+                              <p class="text-justify text-last-center text-white-50">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
+                                    ipsa! Repudiandae excepturi autem nulla corporis quo dolorum!
+                                    Sit, magni. Maxime.
+                              </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center px-4 pb-4">
+                              <div class="service-icons mx-auto p-5 rounded-circle">
+                                    <img
+                                          src="assets/exterior.png"
+                                          alt="exterior"
+                                          class="img-fluid"
+                                    />
+                              </div>
+                              <h5 class="p-3 h3 text-white">Exterior Service</h5>
+                              <p class="text-justify text-last-center text-white-50">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
+                                    ipsa! Repudiandae excepturi autem nulla corporis quo dolorum!
+                                    Sit, magni. Maxime.
+                              </p>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-4 text-center px-4 pb-4">
+                              <div class="service-icons mx-auto p-5 rounded-circle">
+                                    <img
+                                          src="assets/full.png"
+                                          alt="full-service"
+                                          class="img-fluid"
+                                    />
+                              </div>
+                              <h5 class="p-3 h3 text-white">Full Service</h5>
+                              <p class="text-justify text-last-center text-white-50">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
+                                    ipsa! Repudiandae excepturi autem nulla corporis quo dolorum!
+                                    Sit, magni. Maxime.
+                              </p>
+                        </div>
+                  </div>
+            </div>
+
+            <div id="team" class="container-fluid g-0 position-relative pb-5 team-main mb-5">
+                  <div id="about" class="container-xl team">
+                        <div class="row g-0 text-center">
+                              <p class="col-12 display-3 text-dark fw-semibold p-3 py-5">
+                                    About Us
+                              </p>
+
+                              <div class="owl-carousel owl-theme owl-loaded pb-80">
+                                    <div class="item bg-dark p-4 m-4 shadow">
+                                          <img
+                                                src="./assets/person-placeholder-m.jpg"
+                                                class="img-fluid m-auto"
+                                                alt=""
+                                          />
+                                          <h2 class="h3 p-3 fw-bold">John Doe</h2>
+                                          <h6 class="text-white text-content">Shine Expert</h6>
+                                          <h6 class="text-white-50 text-content">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quis, consectetur.
+                                          </h6>
+                                    </div>
+                                    <div class="item bg-dark p-4 m-4 shadow">
+                                          <img
+                                                src="./assets/person-placeholder-f.jpg"
+                                                class="img-fluid m-auto"
+                                                alt=""
+                                          />
+                                          <h2 class="h3 p-3 fw-bold">Jane Doe</h2>
+                                          <h6 class="text-white text-content">Scrub Expert</h6>
+                                          <h6 class="text-white-50 text-content">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quis, consectetur.
+                                          </h6>
+                                    </div>
+                                    <div class="item bg-dark p-4 m-4 shadow">
+                                          <img
+                                                src="./assets/person-placeholder-m.jpg"
+                                                class="img-fluid m-auto"
+                                                alt=""
+                                          />
+                                          <h2 class="h3 p-3 fw-bold">James Boe</h2>
+                                          <h6 class="text-white text-content">Machine Manager</h6>
+                                          <h6 class="text-white-50 text-content">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quis, consectetur.
+                                          </h6>
+                                    </div>
+                                    <div class="item bg-dark p-4 m-4 shadow">
+                                          <img
+                                                src="./assets/person-placeholder-f.jpg"
+                                                class="img-fluid m-auto"
+                                                alt=""
+                                          />
+                                          <h2 class="h3 p-3 fw-bold">Julie Boe</h2>
+                                          <h6 class="text-white text-content">Service Inspector</h6>
+                                          <h6 class="text-white-50 text-content">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quis, consectetur.
+                                          </h6>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="container-fluid g-0 py-5 team-top"></div>
+                  <div class="container-fluid g-0 py-5 team-top"></div>
+                  <div class="container-fluid g-0 py-5 team-top"></div>
+                  <div class="container-fluid g-0 py-5 team-top"></div>
+                  <div class="container-fluid g-0 py-5 team-bottom"></div>
+                  <div class="container-fluid g-0 py-5 team-bottom"></div>
+                  <div class="container-fluid g-0 py-5 team-bottom"></div>
+                  <div class="container-fluid g-0 py-5 team-bottom"></div>
+            </div>
+
+            <div id="appoint" class="container-lg rounded shadow p-2 p-md-5 my-5">
+                  <div class="row g-0 text-center">
+                        <div class="col-12 display-3 text-white text-center p-0 p-sm-3 pb-5">
+                              Make your appointment now!
+                        </div>
+                  </div>
+                  <form action="" id="bookingForm">
+                        <div class="form-floating mb-1">
+                              <input
+                                    type="text"
+                                    class="form-control book-input"
+                                    id="fullName"
+                                    placeholder="John Doe"
+                              />
+                              <label for="fullName" class="text-white">Full Name</label>
+                              <div id="fullNamevalidationc" class="validation-message-container">
+                                    <span id="fullNamevalidation" class="validation-message"></span>
+                              </div>
+                        </div>
+                        <div class="form-floating mb-1">
+                              <input
+                                    type="text"
+                                    class="form-control book-input"
+                                    id="eMail"
+                                    placeholder="name@example.com"
+                              />
+                              <label for="eMail" class="text-white">Email Address</label>
+                              <div id="emailvalidationc" class="validation-message-container">
+                                    <span id="emailvalidation" class="validation-message"></span>
+                              </div>
+                        </div>
+                        <div class="form-floating mb-1">
+                              <input
+                                    type="tel"
+                                    class="form-control book-input"
+                                    id="contact"
+                                    placeholder="+1 123 123 1234"
+                              />
+                              <label for="contact" class="text-white">Contact Number</label>
+                              <div id="contactvalidationc" class="validation-message-container">
+                                    <span id="contactvalidation" class="validation-message"></span>
+                              </div>
+                        </div>
+                        <div id="dynamic" class="row">
+                              <div class="col-12 col-lg-6 d-flex align-items-center py-2 px-4">
+                                    <label
+                                          for="carsPossible"
+                                          class="form-label text-white fs-6 pe-3"
+                                          >Total Cars: </label
+                                    ><select
+                                          id="carsPossible"
+                                          class="form-control bg-dark border-0 text-white dropdown"
+                                    ></select>
+                              </div>
+                              <div class="col-12 col-lg-6 d-flex align-items-center py-2 px-4">
+                                    <label
+                                          for="slotsAvailable"
+                                          class="form-label text-white fs-6 pe-3"
+                                          >Prefered Time: </label
+                                    ><select
+                                          id="slotsAvailable"
+                                          class="form-control bg-dark border-0 text-white dropdown dropdown-slot"
+                                    ></select>
+                              </div>
+                        </div>
+                        <div id="costing" class="container-fluid g-0"></div>
+                        <div class="row">
+                              <div
+                                    class="form-check form-switch d-flex flex-wrap align-items-center gap-3"
+                              >
+                                    <label
+                                          class="form-check-label text-white"
+                                          for="flexSwitchCheckDefault"
+                                          >Do you have access to an exterior water outlet?</label
+                                    >
+                                    <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          role="switch"
+                                          id="waterOutlet"
+                                    />
+                              </div>
+                        </div>
+                        <div class="row g-0 my-3">
+                              <button
+                                    type="submit"
+                                    id="submitButton"
+                                    class="btn btn-lg btn-outline-info d-flex align-items-center col-auto ms-auto"
+                              >
+                                    Next <i class="fa-solid fa-angles-right ps-2"></i>
+                              </button>
+                        </div>
+
+                        <div
+                              id="amount"
+                              class="d-flex pt-4 justify-content-between initial-hidden"
+                        ></div>
+                        <div id="confirm" class="row g-0 pt-5 initial-hidden"></div>
+                  </form>
+            </div>
+
+            <div class="container-fluid g-0 mt-5 position-relative footer">
+                  <div class="container-fluid g-0 footer-inner py-4">
+                        <div class="container-xl pt-5">
+                              <div class="row g-0">
+                                    <div class="col-xl-3 col-md-6 col-sm-12 px-4">
+                                          <div>
+                                                <a
+                                                      class="d-flex align-items-center gap-2 justify-content-center justify-content-xl-start text-decoration-none text-dark"
+                                                      href="#home"
+                                                >
+                                                      <img
+                                                            src="./assets/logo.png"
+                                                            alt=""
+                                                            width="50"
+                                                            class="img-fluid"
+                                                      />
+                                                      <span class="fs-2 fw-bold">Car-wash</span>
+                                                </a>
+                                          </div>
+                                          <div class="py-3 text-black-50 text-justify">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                elit. Quam laborum odio dicta suscipit possimus
+                                                assumenda amet dolorum maiores error ab harum, rerum
+                                                quidem nostrum laudantium.
+                                          </div>
+                                    </div>
+                                    <div class="col-auto mx-auto px-4 text-center">
+                                          <h3 class="text-dark fw-bold py-3">Services</h3>
+                                          <ul>
+                                                <li class="text-black-50">Interior service</li>
+                                                <li class="text-black-50">Exterior service</li>
+                                                <li class="text-black-50">Full-body service</li>
+                                          </ul>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6 col-sm-12 text-center px-4">
+                                          <h3 class="text-dark fw-bold py-3">Links</h3>
+                                          <ul>
+                                                <li class="text-black-50">
+                                                      <a class="text-black-50" href="#home">Home</a>
+                                                </li>
+                                                <li class="text-black-50">
+                                                      <a class="text-black-50" href="#intro"
+                                                            >What we do?</a
+                                                      >
+                                                </li>
+                                                <li class="text-black-50">
+                                                      <a class="text-black-50" href="#services"
+                                                            >Services</a
+                                                      >
+                                                </li>
+                                                <li class="text-black-50">
+                                                      <a class="text-black-50" href="#team"
+                                                            >About Us</a
+                                                      >
+                                                </li>
+                                                <li class="text-black-50">
+                                                      <a class="text-black-50" href="#appoint"
+                                                            >Book Us</a
+                                                      >
+                                                </li>
+                                          </ul>
+                                    </div>
+                                    <div
+                                          class="col-xl-3 col-md-6 col-sm-12 text-center text-xl-start px-4"
+                                    >
+                                          <h3 class="text-dark fw-bold py-3">Contact Us</h3>
+                                          <ul>
+                                                <li
+                                                      class="text-black-50 d-flex align-items-center justify-content-center justify-content-xl-start gap-3"
+                                                >
+                                                      <i
+                                                            class="fa-solid fa-map-location-dot fs-4"
+                                                      ></i
+                                                      >New York, NY 10012, US
+                                                </li>
+                                                <li
+                                                      class="text-black-50 d-flex align-items-center justify-content-center justify-content-xl-start gap-3"
+                                                >
+                                                      <i class="fa-solid fa-inbox fs-4"></i
+                                                      >info@example.com
+                                                </li>
+                                                <li
+                                                      class="text-black-50 d-flex align-items-center justify-content-center justify-content-xl-start gap-3"
+                                                >
+                                                      <i class="fa-solid fa-address-book fs-4"></i>+
+                                                      01 234 567 88
+                                                </li>
+                                          </ul>
+                                          <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap gap-3 justify-content-center justify-content-xl-start fs-3 py-3"
+                                          >
+                                                <div
+                                                      class="social-container bg-dark rounded-circle"
+                                                >
+                                                      <i
+                                                            class="fa-brands fa-youtube text-white social yt"
+                                                      ></i>
+                                                </div>
+                                                <div
+                                                      class="social-container bg-dark rounded-circle"
+                                                >
+                                                      <i
+                                                            class="fa-brands fa-instagram text-white social in"
+                                                      ></i>
+                                                </div>
+                                                <div
+                                                      class="social-container bg-dark rounded-circle"
+                                                >
+                                                      <i
+                                                            class="fa-brands fa-facebook-f text-white social fb"
+                                                      ></i>
+                                                </div>
+                                                <div
+                                                      class="social-container bg-dark rounded-circle"
+                                                >
+                                                      <i
+                                                            class="fa-brands fa-twitter text-white social tw"
+                                                      ></i>
+                                                </div>
+                                                <div
+                                                      class="social-container bg-dark rounded-circle"
+                                                >
+                                                      <i
+                                                            class="fa-brands fa-linkedin text-white social li"
+                                                      ></i>
+                                                </div>
+                                                <div
+                                                      class="social-container bg-dark rounded-circle"
+                                                >
+                                                      <i
+                                                            class="fa-brands fa-whatsapp text-white social wa"
+                                                      ></i>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="foot-wave"></div>
+                  <div class="foot-wave"></div>
+                  <div class="foot-wave"></div>
+                  <div class="foot-wave"></div>
+            </div>
+      </body>
+
+      <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+      ></script>
+
+      <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+      ></script>
+
+      <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+      ></script>
+
+      <script type="text/javascript">
+            const prev = `<i class="fa-solid fa-chevron-left text-dark" onmouseover="this.className += ' fa-beat-fade'" onmouseout="this.className = 'fa-solid fa-chevron-left text-dark'"></i>`;
+            const next = `<i class="fa-solid fa-chevron-right text-dark" onmouseover="this.className += ' fa-beat-fade'" onmouseout="this.className = 'fa-solid fa-chevron-right text-dark'"></i>`;
+            $('.owl-carousel').owlCarousel({
+                  loop: true,
+                  margin: 10,
+                  responsiveClass: true,
+                  responsive: {
+                        0: {
+                              items: 1,
+                              nav: true,
+                              loop: true,
+                        },
+                        768: {
+                              items: 2,
+                              nav: false,
+                              loop: true,
+                        },
+                        992: {
+                              items: 2,
+                              nav: true,
+                              loop: false,
+                              loop: true,
+                        },
+                        1200: {
+                              items: 3,
+                              nav: true,
+                              loop: false,
+                              loop: true,
+                        },
+                  },
+                  navText: [prev, next],
+            });
+      </script>
+
+      <script src="script/validation.js"></script>
+
+      <script src="script/index.js"></script>
+</html>

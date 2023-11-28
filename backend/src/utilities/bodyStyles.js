@@ -1,0 +1,26 @@
+const bodyStyles = {
+      micro: 100,
+      sedan: 250,
+      hatchBack: 150,
+      universal: 300,
+      liftBack: 150,
+      coupe: 250,
+      cabriolet: 300,
+      roadster: 300,
+      terga: 150,
+      limousine: 500,
+      muscleCar: 250,
+      sportCar: 300,
+      superCar: 350,
+      SUV: 400,
+      crossover: 300,
+      pickup: 450,
+      van: 450,
+      miniVan: 400,
+      miniBus: 550,
+      camperVan: 600,
+      bus: 700,
+      truck: 900,
+};
+
+module.exports = bodyStyles;
