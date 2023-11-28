@@ -1,0 +1,37 @@
+1. Installing Visual Studio Code:
+
+i. Visit: https://code.visualstudio.com/ or google, "download vs code".
+ii. Download "vs code" for your respective operating system.
+iii. Install the software by running the executible file and follow the on-screen instructions. (Standard installation steps.)
+
+2. Installing Node Js:
+
+i. Visit: https://nodejs.org/en/download or google, "download node js".
+ii. Download "node js" for your respective operating system.
+iii. Run the executible file and follow the on-screen guide. (Standard installation steps.)
+iv. To confirm Node is installed correctly, open command prompt(or terminal) and run, "node --version".
+v. If it prints a version number, you're good.
+
+3. Installing MongoDB:
+
+i. Visit: https://mongodb.com or google "download mongodb".
+ii. Install by following the instructions.
+
+4. Opening The Project:
+
+i. Open vs code on your compoter.
+ii. Form the files menu, choose Open Folder, or use the shortcut [ctrl+k ctrl+0](command on mac).
+iii. Choose the project folder from the file browser and press the "Open" button.
+iv. You should be able to see the list of source files on the left. Navigate to ".env" file.
+v. The "DURATION" value indicated working hours(from 9:00 to 22:00), "SLOTDURATION" and "SLOTINTERVAL" values indicate a single slot dutaion as a whole.
+vi. The "HOST" value indicates the source email address from which the emails would be send to a customer.
+(NOTE: If you wish to change this, you would need to setup a two way authentication on the email address you wish to replace it with. You need to replace "HOSTPASS" in .env with the password generated on authentication.)
+vii. Press [Ctrl + `](Command on mac) and run "cd backend".
+viii. Run, "npm i" next.
+ix. Finally, run "npm start".
+
+5. Running the project:
+
+i. Open your loacl file browser and navigate to the project directory.
+ii. Open "frontend" directory and run "index.htm".
+iii. The project should be working now. (Make sure you're connected to the internet)
